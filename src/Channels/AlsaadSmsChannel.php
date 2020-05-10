@@ -3,7 +3,7 @@
 namespace Illuminate\Notifications\Channels;
 
 use Alsaad\Client as AlsaadClient;
-use Illuminate\Support\Facades\Notification;
+use Illuminate\Notifications\Notification;
 use Illuminate\Notifications\Messages\AlsaadMessage;
 
 class AlsaadSmsChannel
