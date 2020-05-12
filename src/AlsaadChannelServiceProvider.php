@@ -20,7 +20,7 @@ class AlsaadChannelServiceProvider extends ServiceProvider
             $service->extend('alsaad', function ($app) {
                 return new AlsaadSmsChannel(
                     $this->app->make(AlsaadClient::class),
-                    $this->app['config']['services.alsaad.sms_from'],
+                    $this->app['config']['services.alsaad.sms_from']
                 );
             });
         });
